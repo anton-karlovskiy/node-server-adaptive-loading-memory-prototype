@@ -15,9 +15,7 @@ npm run build
 npm run start-node
 ```
 
-## Deployment
-[Here](https://server-adaptive-loading-memory.firebaseapp.com/)
-
+## Deployment(Firebase Functions)
 ### deploy functions
 ```
 npm run deploy-functions
