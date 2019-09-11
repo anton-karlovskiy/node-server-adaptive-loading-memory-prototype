@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <div className="root-frame">
-          <img src="memory-considerate-image" className="responsive" alt="spider man" />
+          <img src="/memory-considerate-image" className="responsive" alt="spider man" />
         </div>
       </header>
     </div>
