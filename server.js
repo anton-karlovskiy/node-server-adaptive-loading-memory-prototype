@@ -18,9 +18,11 @@ app.get('/ping', (req, res) => {
 });
 
 app.get('/memory-considerate-image', (req, res) => {
+  // TODO: As this is a demo, I think it should be easy enough to change these numbers as needed in the future.
+  const MEMORY_LIMIT = 4;
   const deviceMemory = req.headers['device-memory'];
   console.log('[server memory-considerate-image request] Device Memory => ', deviceMemory);
-  const url = deviceMemory < 1 ?
+  const url = deviceMemory < MEMORY_LIMIT ?
     'https://cdn.glitch.com/8d7fb7f0-a9be-4a8c-96c7-8af286af487e%2Fmin-res.jpg?v=1562842586912' :
     'https://cdn.glitch.com/8d7fb7f0-a9be-4a8c-96c7-8af286af487e%2Fmax-res.jpg?v=1562842587982';
 
